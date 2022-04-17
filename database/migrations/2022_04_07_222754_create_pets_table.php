@@ -32,4 +32,5 @@ class CreatePetsTable extends Migration
     {
         Schema::dropIfExists('pets');
     }
+
 }

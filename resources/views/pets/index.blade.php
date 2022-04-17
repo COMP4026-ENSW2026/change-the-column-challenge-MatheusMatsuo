@@ -13,3 +13,5 @@ Seus pets:
         </li>
     @endforeach
 </ul>
+
+<a href="/pets" method="put">Atualizar</a>

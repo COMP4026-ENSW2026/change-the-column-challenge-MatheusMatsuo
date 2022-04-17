@@ -25,4 +25,9 @@ Route::get('/users', function(){
 
 // Route::group('v1', function(){
     Route::resource('pets', PetsController::class);
+
+// Atualiza dados size
+    Route::put('/pets',  PetsController::alterarValoresSize());
+
+    Route::put('/pets',  PetsController::alterarValoresEspecie());
 // });

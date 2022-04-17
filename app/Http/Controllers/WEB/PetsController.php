@@ -21,12 +21,12 @@ class PetsController extends Controller
     }
 
     public function store(Request $request){
-        // $request->validate([
-        //     'name' => 'required',
-        //     'specie' => 'required',
-        //     'color' => 'required',
-        //     'size' => 'required|max:2',
-        // ]);
+         $request->validate([
+             'name' => 'required',
+             'specie' => 'required',
+             'color' => 'required',
+             'size' => 'required',
+         ]);
 
         $pet = Pet::create([
             'name' => $request['name'],
